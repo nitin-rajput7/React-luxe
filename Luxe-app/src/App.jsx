@@ -1,8 +1,22 @@
 import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Layout from './components/Layout/Layout'
+import Home from './components/Webpages/Home'
+import Shop from './components/Webpages/Shop'
+import About from './components/Webpages/About'
 
-function App(){
+function App() {
   return (
-    <div>App</div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route path='/Home' element={<Home />} />
+          <Route path="/Shop" element={<Shop />} />
+          <Route path="/About" element={<About />} />
+          {/* <Route path='/Contact' element={<Contact/>} /> */}
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
