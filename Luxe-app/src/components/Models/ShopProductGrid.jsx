@@ -1,4 +1,7 @@
 import React from 'react'
+// css----
+import '../Webpages/About'
+
 import leatherjac from '../../assets/images/Background\ \(1\).png'
 import elegantdress from '../../assets/images/Elegant\ Black\ Dress.png'
 import winterwool from '../../assets/images/Winter\ Wool\ Coat.png'
@@ -7,7 +10,7 @@ import whitesneaker from '../../assets/images/Premium\ White\ Sneakers.png'
 import handbag from '../../assets/images/Accessories.png'
 import denimjeans from '../../assets/images/Background\ \(3\).png'
 import leatherboot from '../../assets/images/Background\ \(5).png'
-import  beigesweater from '../../assets/images/Background\ \(2).png'
+import beigesweater from '../../assets/images/Background\ \(2).png'
 import streethoodie from '../../assets/images/Street\ Style\ Hoodie.png'
 import casualshirt from '../../assets/images/Background\ \(4).png'
 import kids from '../../assets/images/kids.png'
@@ -62,7 +65,8 @@ const ShopProductGrid = () => {
           </div>
           
           </div>
-          <button>Clear All Filters</button>
+          <div className="aside-btn">
+          <button>Clear All Filters</button></div>
     </div>
     <div className="shopright">
        <div className="shop-img-div">

@@ -1,0 +1,45 @@
+
+.Navbar{
+  position: sticky;
+  top: 0;
+  height: 11vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw 7vw;
+}
+.Navbar .mainlogo a{
+  font-size:22px;
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+}
+.Navbar ul{
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.Navbar ul a {
+  text-decoration: none;
+  color: black;
+}
+.Navbar .icons{
+  display: flex;
+  gap: 20px;
+
+}
+
+.Navbar .icons a{
+  text-decoration: none;
+  color: black;
+}
+
+/* ======================mobile========= */
+
+@media (max-width:425px){
+  .Navbar ul{
+    display: none;
+  }
+}

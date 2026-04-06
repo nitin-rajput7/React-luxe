@@ -1,4 +1,5 @@
 import React from "react";
+import '../Layout/Header.css'
 import { NavLink } from "react-router-dom";
 
 function Header() {
@@ -6,8 +7,8 @@ function Header() {
   return (
     <>
        <div className="Navbar">
-        <div className="mainlogo">LUXE</div>
-        
+        <div className="mainlogo"><a href="/Home">LUXE</a></div>
+          
         <ul>
           <li> <NavLink to="/Home">Home</NavLink></li>
           <li><NavLink to="/Shop">Shop</NavLink></li>
@@ -20,7 +21,7 @@ function Header() {
            <a href="w"><i class="fa-regular fa-heart"></i></a>
            <a href="w"><i class="fa-solid fa-cart-arrow-down"></i></a>
            <a href="w"><i class="fa-regular fa-address-book"></i></a>
-        </div>
+       </div>
        </div>
     </>
   );

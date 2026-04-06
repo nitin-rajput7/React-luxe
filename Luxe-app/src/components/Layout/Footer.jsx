@@ -1,5 +1,5 @@
 import React from 'react'
-
+import '../Layout/Footer.css'
 
 function Footer() {
   return (
@@ -23,7 +23,7 @@ function Footer() {
             </div>
           </div>
 
-          <div className="footer-box">
+          <div className="footerbox">
             <h3>Quick Links</h3>
             <ul>
               <li>About Us</li>

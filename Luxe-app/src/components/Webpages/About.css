@@ -1,0 +1,317 @@
+
+/* -------------------------------------------About section ------------------------------- */
+
+.aboutus-banner{
+   
+  height: 400px;
+  padding: 0px 60px;
+  background: url("../../assets/images/Summer\ Collection.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  
+}
+.about-content{
+  height: 100%;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.about-content h1{
+  font-size: 56px;
+  font-weight: 500;
+}
+.about-content p{
+  font-size: 18px;
+}
+
+/* ------------------------------------ Our Story------------------------------- */
+
+.ourstory{
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ourstory-content{
+  width: 50%;
+   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.ourstory-content >p{
+   font-size: 14px;
+   text-align: center;
+   color: #4A5565;
+}
+
+/* ----------------------------------------Stand For -------------------- */
+.standfor-main{
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F9FAFB;
+  /* border: 1px solid black; */
+
+}
+.standfor-container{
+  width: 90%;
+  height: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+.standfor-box{
+  height: 192px;
+  width: 286px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid black; */
+}
+
+.displayflexcenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-svg{
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+  background-color: #C5A880;
+}
+.box-svg img{
+  height: 26px;
+  width: 26px;
+}
+.boldp{  
+  font-size: 15px;
+  font-weight: 600;
+}
+.box-content p:last-child{
+  font-size: 12px;
+  font-weight: 400;
+}
+.whyp{
+  text-align: center;
+  color: #4A5565;
+  font-size: 12px;
+  font-weight: 400;
+
+}
+
+/* ---------------------About Stats-------------------- */
+
+.stats-maindiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  /* border: 1px solid black; */
+}
+
+.stats-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+.stats-container div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.stats-container p{
+  color: #4A5565;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* ---------------------Meet our Team-------------------- */
+
+.meeting-maindiv{
+
+ padding: 10px 0px;
+ background-color: #F9FAFB;
+ /* border: 1px solid black; */
+}
+.meeting-maindiv h1{
+  text-align: center;
+  padding-top: 42px;
+}
+.meeting-container{
+  padding: 42px 0px;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  
+}
+.meeting-container .meet-cards img{
+  height: 320px;
+  width: 320px;
+  border-radius: 12px;
+  background-size: cover;
+  
+}
+.meet-cards{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+/* ----------------------------Contact page------------------- */
+
+.get-touchmain{
+  background-color: #F9FAFB;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  padding: 42px 0px;
+}
+
+/* -------------------------forms section-------- */
+
+.contact-section {
+  display: flex;
+  gap: 50px;
+  padding: 60px 10%;
+  background: #f6f6f6;
+}
+
+/* LEFT */
+.contact-left {
+  flex: 1;
+}
+
+.contact-left h2 {
+  margin-bottom: 30px;
+}
+
+.info-box {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  background: #c7a17a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.info-box h4 {
+  margin-bottom: 5px;
+}
+
+.info-box p {
+  color: #555;
+  font-size: 14px;
+}
+
+/* MAP */
+.map-box {
+  margin-top: 30px;
+  height: 200px;
+  background: #ddd;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+}
+
+/* RIGHT */
+.contact-right {
+  flex: 1;
+}
+
+.contact-right h2 {
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;  
+  font-size: 14px;
+}
+.icon{
+  
+  color: white;
+}
+.icon i{
+  
+  color: white;
+}
+.row {
+  display: flex;
+  gap: 15px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  font-size: 14px;
+}
+
+textarea {
+  height: 120px;
+  resize: none;
+}
+
+button {
+  background: black;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  opacity: 0.9;
+} 
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .contact-section {
+    flex-direction: column;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+}

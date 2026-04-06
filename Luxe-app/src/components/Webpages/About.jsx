@@ -1,4 +1,7 @@
 import React from 'react'
+// -----CSS/
+import '../Webpages/About.css'
+
 import Aboutusbanner from '../Models/Aboutusbanner'
 import About_Ourstory from '../Models/About_Ourstory'
 import About_Standfor from '../Models/About_Standfor'

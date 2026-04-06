@@ -1,0 +1,492 @@
+
+.Hero{
+ height: 90vh;
+ display: flex;
+ justify-content: end;
+ align-items: center;
+ background: linear-gradient(90deg, #00000099,#00000033),url("../../assets/images/Hero.png") center/cover no-repeat ;
+/* background-blend-mode: darken; */
+
+}
+
+.hero-text{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: #fff;
+
+}
+ .hero-text h1{
+  font-size: 55px;
+  font-weight: 500;
+  
+ }
+ .hero-text p{
+  font-weight: 400;
+  font-size: 18px;
+ }
+
+ .hero-btn{
+  display: flex;
+  gap: 16px;
+  padding: 18px 0px;
+  
+}
+.hero-btn button:first-child{
+  font-size: 16px;
+  background-color: white;
+  color: black;
+}
+.hero-btn button{
+  font-weight: 600;
+  padding: 18px 38px;
+  border-radius: 10px;
+  border: none; 
+  
+ }
+ .hero-btn .outline{
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+ }
+/* ================= 768px (Tablet) ================= */
+@media (max-width: 768px) {
+  .Hero {
+    height: 70vh;
+  }
+  .hero-text {
+    padding-left: 0;
+  }
+  .hero-text h1 {
+    font-size: 40px;
+  }
+  .hero-text p {
+    font-size: 16px;
+  }
+  .hero-btn button {
+    padding: 14px 28px;
+    font-size: 14px;
+  }
+}
+/* ---===============425px================ */
+ @media (max-width:425px){
+  .hero-text h1{
+    font-size: 28px;
+  }
+  .hero-text p{
+    font-size: 14px;
+  }
+ .hero-btn{
+  flex-direction: column;
+ }
+  .hero-btn button:first-child{
+    width: 138px;
+  }
+  .hero-btn button:last-child{
+    width: 190px;
+  }
+ 
+ }
+
+ /* -----------------------------Shop By Cards------------------------------------ */
+@media (max-width:425px){
+  .categories-cards h1{
+    font-size: 26px;
+  }
+}
+ .categories-cards{
+  height: 100%;
+  gap: 32px;
+  padding: 38px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+      
+ }
+ .h1{
+  font-size: 34px;
+  font-weight: 500;
+  
+ }
+
+ .cards-container >div{
+  border-radius: 14px
+ }
+
+ .card-text p{
+  font-weight: 400;
+  font-size: 13px;
+  
+ }
+
+.cards-container{
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 22px;
+}
+  
+.card-text{
+  width: 90%;
+  height: 90%;
+  color: #fff;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content:end;
+
+}
+.cat-card{
+  height: 357px;
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0) 100%),url("../../assets/images/Men.png")center/cover no-repeat;  
+
+ }
+ 
+.card1{
+  display: flex;
+  justify-content: right;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0) 100%),url("../../assets/images/Men.png")center/cover no-repeat;  
+
+}
+
+
+.card2{
+  display: flex;
+  justify-content: right;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0) 100%),url("../../assets/images/Women.png")center/cover no-repeat;
+  
+
+}
+.card3{
+  
+  display: flex;
+  justify-content: right;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0) 100%),url("../../assets/images/Kids.png")center/cover no-repeat;
+
+}
+.card4{
+  display: flex;
+  justify-content: right;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0) 100%),url("../../assets/images/Accessories.png")center/cover no-repeat;
+ 
+
+} 
+
+/* ------------------------------------Trending Card----------------- */
+@media (max-width:425px){
+
+
+.card-image-prop{
+    width: 100%;
+}
+
+.trending-main .tp .h1{
+  font-size: 24px;
+}
+.trending-main .tp p{
+  font-size: 8px;
+}
+
+}
+
+/* =========================================================== */
+
+
+.trending-main{
+  padding: 90px 0px;
+  gap: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #F9FAFB;
+}
+.trending-main .tp{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+}
+.trending-main .tp>p{
+  color: #C5A880;
+  font-size: 15px;
+  font-weight: 600;
+}
+.cards-grid-container{
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) ;
+  gap: 18px;
+}
+
+.cards-main{
+  height: 501px;
+  display: grid; 
+  border-radius: 10px;
+  /* border:1px solid black; */
+}
+
+.card-image{
+  /* height: 381px; */
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-image: url("../../assets/images/Kids.png");
+  background-size: cover;
+  
+}
+.card-image1{
+  height: 381px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background: url("../../assets/images/Background.png");
+  background-size: cover;
+  
+}
+.card-image2{
+  height: 381px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background: url("../../assets/images/Background\ \(1\).png");
+  background-size: cover;
+  
+}
+.card-image3{
+  height: 381px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background: url("../../assets/images/Background\ \(2\).png");
+  background-size: cover;
+  
+}
+.card-image4{
+  height: 381px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background: url("../../assets/images/Background\ \(3\).png");
+  background-size: cover;
+  
+}
+.card-image5{
+  height: 381px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background: url("../../assets/images/Premium\ White\ Sneakers.png");
+  background-size: cover;
+  
+}
+.card-image6{
+  height: 381px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background: url("../../assets/images/Elegant\ Black\ Dress.png");
+  background-size: cover;
+  
+}
+.card-image7{
+  height: 381px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background: url("../../assets/images/Background\ \(4\).png");
+  background-size: cover;
+  
+}
+.card-image8{
+  height: 381px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background: url("../../assets/images/Winter\ Wool\ Coat.png");
+  background-size: cover;
+  
+}
+.rating{
+  color: #FCC800; 
+  font-size: 10px;
+  display: flex;
+  gap: 3px;
+}
+.rating :last-child{
+  color: #D1D5DC;
+}
+.card-others{
+  width: 265px;
+  line-height: 32px;
+  padding-left: 9px;
+  /* border:1px solid black; */
+
+}
+
+.price-details{
+  padding: 8px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+.price-details button{
+  color: #fff;
+  padding: 9px 22px;
+  background-color: black;
+  border-radius: 12px;
+  border: none;
+}
+.price-details p{
+  font-weight: 600;
+  font-size: 16px;
+}
+.card-others >p{
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* ------------------------ Summer COllections--------------------- */
+
+
+/*========768px========= */
+@media (max-width: 768px) {
+.summer-left h1{
+  font-size: 34px !important;
+  /* border: 1px solid black; */
+}
+
+.summer-left p{
+  font-size: 14px !important;
+}
+.summer-right{
+  height: 65% !important;
+}
+
+}
+/*======Mobile 425px================== */
+
+@media (max-width: 425px) {
+.summer-container{
+  display: flex !important;
+  flex-direction: column;
+  gap: 12px;
+  
+}
+.summer-right{
+  width: 100% !important;
+}
+}
+/* ------------------------------------------------ */
+
+.summer-main{
+  padding: 32px 0px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.summer-container{
+  width: 90%;
+  padding: 32px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+ 
+}
+.summer-left{
+  width: 50%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  
+}
+.summer-left h1{
+  font-size: 45px;
+  font-weight: 500;
+}
+.summer-left p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #4A5565;
+}
+.summer-left button{
+  width: 220px;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 16px 42px;
+  border-radius: 10px;
+  color: white;
+  background-color: black;
+}
+
+.summer-right{
+  width: 584px;
+  height: 438px;
+  align-items: center;
+  background: url("../../assets/images/Summer\ Collection.png");
+  background-size: cover;
+}
+
+/* --------------------------------Why Choose Us-------------------------------------- */
+
+.whychoose-main{
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  background-color: #F9FAFB;
+  /* border: 1px solid black; */
+
+}
+.whychoose-container{
+  width: 90%;
+  height: 60%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+.whych-box{
+  height: 192px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid black; */
+}
+
+.displayflexcenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-svg{
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+  background-color: #C5A880;
+}
+.box-svg img{
+  height: 26px;
+  width: 26px;
+}
+.boldp{  
+  font-size: 15px;
+  font-weight: 600;
+}
+.box-content p:last-child{
+  font-size: 12px;
+  font-weight: 400;
+}
+.whyp{
+  text-align: center;
+  color: #4A5565;
+  font-size: 12px;
+  font-weight: 400;
+}

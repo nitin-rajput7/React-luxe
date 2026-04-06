@@ -17,4 +17,4 @@ const Shop_allproduct = () => {
   )
 }
 
-export default Shop_allproduct 
+export default Shop_allproduct ;

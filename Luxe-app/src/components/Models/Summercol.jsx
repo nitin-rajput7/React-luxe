@@ -20,4 +20,4 @@ vibrant colors, and comfortable fabrics perfect for the season. </p>
   )
 }
 
-export default Summercol
+export default Summercol ; 

@@ -1,0 +1,40 @@
+/* -----------------------------------Contact ------------ */
+.faq-container {
+  background: #f3f3f3;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.faq-title {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.faq-box {
+  max-width: 800px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 25px;
+  text-align: left;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  transition: 0.3s;
+}
+
+.faq-box:hover {
+  transform: translateY(-3px);
+}
+
+.faq-box h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.faq-box p {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.6;
+}
