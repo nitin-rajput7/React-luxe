@@ -346,88 +346,92 @@
 }
 
 /* ------------------------ Summer COllections--------------------- */
-
-
-/*========768px========= */
-@media (max-width: 768px) {
-.summer-left h1{
-  font-size: 34px !important;
-  /* border: 1px solid black; */
+/* --media 768px*/
+@media (max-width:768px){
+  .summer-left{
+     padding: 0px !important;
+  }
+  .summer-left h1{
+    font-size: 34px !important ;
+  }
+  .summer-left p{
+    font-size: 14px !important ;
+  }
+  .summer-btn{
+    font-size: 12px;
+    width: 150px !important;
+  }
 }
-
-.summer-left p{
-  font-size: 14px !important;
-}
-.summer-right{
-  height: 65% !important;
-}
-
-}
-/*======Mobile 425px================== */
-
-@media (max-width: 425px) {
-.summer-container{
-  display: flex !important;
-  flex-direction: column;
-  gap: 12px;
+/* media 425px */
+@media (max-width:425px) {
+ .summer-container{
+  flex-wrap: wrap !important;
+ }
+  .summer-left{
+    padding: 0px !important;
+    width: 100% !important;
+  }
+  .summer-right{
+    width: 100% !important;
+  }
   
 }
-.summer-right{
-  width: 100% !important;
+/* media 320px */
+@media (max-width:320px){
+  .summer-left{
+     padding: 0px !important;
+  }
+  .summer-left h1{
+    font-size: 26px !important;
+  }
+  .summer-left p{
+    font-size: 12px !important;
+  }
+   .summer-btn{
+    font-size: 12px;
+    width: 140px !important;
+  }
 }
-}
-/* ------------------------------------------------ */
 
-.summer-main{
-  padding: 32px 0px;
-  display: flex;
-  justify-content: center;
-  border: 1px solid black;
-}
 
+.summer{
+ padding: 32px 0px;
+
+}
 .summer-container{
-  width: 90%;
-  padding: 32px 0px;
+  padding: 12px 42px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid black;
+  gap: 18px;
  
 }
 .summer-left{
   width: 50%;
-  justify-content: center;
+  padding-left: 32px;
   display: flex;
   flex-direction: column;
-  
+  justify-content: center;
+  gap: 12px;
 }
 .summer-left h1{
-  font-size: 45px;
+  font-size: 42px;
   font-weight: 500;
 }
 .summer-left p{
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 25px;
   color: #4A5565;
 }
-.summer-left button{
-  width: 220px;
-  font-weight: 600;
-  font-size: 15px;
-  padding: 16px 42px;
-  border-radius: 10px;
-  color: white;
-  background-color: black;
+.summer-btn{
+  width: 198px;
 }
 
 .summer-right{
-  width: 584px;
-  height: 438px;
-  align-items: center;
-  background: url("../../assets/images/Summer\ Collection.png");
-  background-size: cover;
+  width: 50%;
+  
 }
+.summer-right img{
+  width: 100%;
+
+}
+
 
 /* --------------------------------Why Choose Us-------------------------------------- */
 

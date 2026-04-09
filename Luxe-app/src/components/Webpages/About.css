@@ -1,8 +1,33 @@
 
 /* -------------------------------------------About section ------------------------------- */
+@media (max-width:425px){
+  .about-content h1{
+    font-size: 39px !important;
+  }
+  .about-content p{
+    font-size: 14px !important;
+  }
+}
+@media (max-width:375px){
+  .about-content h1{
+    font-size: 39px !important;
+  }
+  .about-content p{
+    font-size: 12px !important;
+  }
+}
+@media (max-width:320px){
+  .about-content h1{
+    font-size: 34px !important;
+  }
+  .about-content p{
+    font-size: 9px !important;
+  }
+}
+
+
 
 .aboutus-banner{
-   
   height: 400px;
   padding: 0px 60px;
   background: url("../../assets/images/Summer\ Collection.png");
@@ -29,7 +54,11 @@
 }
 
 /* ------------------------------------ Our Story------------------------------- */
-
+@media(max-width:768px){
+  .ourstory-content{
+    width: 75% !important ;
+  }
+}
 .ourstory{
   height: 400px;
   display: flex;
@@ -51,8 +80,28 @@
 }
 
 /* ----------------------------------------Stand For -------------------- */
+/* ---1024px-- */
+@media (max-width:1024px){
+  .standfor-container{
+    grid-template-columns: 1fr 1fr 1fr !important;
+  }
+}
+
+/* ---768px-- */
+@media (max-width:768px){
+  .standfor-container{
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+/* ---428px--*/
+@media (max-width:425px){
+  .standfor-container{
+    grid-template-columns: 1fr !important;
+  }
+}
+
 .standfor-main{
-  height: 60vh;
+  padding: 52px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -62,13 +111,13 @@
 
 }
 .standfor-container{
-  width: 90%;
-  height: 60%;
+  padding: 32px 0px;
   display: grid;
+  gap: 28px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   flex-direction: column;
   align-items: center;
-  /* border: 1px solid black; */
+  
 }
 .standfor-box{
   height: 192px;
@@ -113,18 +162,27 @@
 }
 
 /* ---------------------About Stats-------------------- */
+/* 425px ------ */
+@media (max-width:425px){
+  .stats-container{
+    flex-direction: column;
+    gap: 32px;
+    
+  }
+
+}
+
 
 .stats-maindiv{
+  padding: 52px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 250px;
   /* border: 1px solid black; */
 }
 
 .stats-container{
   width: 100%;
-  height: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -143,9 +201,26 @@
 }
 
 /* ---------------------Meet our Team-------------------- */
+/* Responsive */
+@media (max-width:768px){
+  .meeting-container{
+    flex-wrap: wrap;
+  }
+  }
+@media (max-width:320px){
+  .meeting-container{
+    flex-wrap: wrap;
+  }
+  .meet-cards img{
+    height: 250px !important;
+    width: 250px !important;
+  }
+
+  }
+
+  
 
 .meeting-maindiv{
-
  padding: 10px 0px;
  background-color: #F9FAFB;
  /* border: 1px solid black; */

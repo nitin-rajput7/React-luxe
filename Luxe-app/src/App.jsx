@@ -7,6 +7,7 @@ import Home from './components/Webpages/Home'
 import Shop from './components/Webpages/Shop'
 import About from './components/Webpages/About'
 import Contact from './components/Webpages/Contact'
+import Detailpage from './components/Webpages/Detailpage'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/Shop" element={<Shop />} />
           <Route path="/About" element={<About />} />
           <Route path='/Contact' element={<Contact/>} />
+          <Route path='/Detailpage' element={<Detailpage/>}/>
         </Route>
       </Routes>
     </BrowserRouter>

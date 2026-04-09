@@ -1,8 +1,9 @@
 import React from 'react'
-
-
+import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function TrendingP() {
+    const navigate = useNavigate();
   return (
     <>
     <div className="trending-main">
@@ -15,7 +16,7 @@ function TrendingP() {
           <div className="rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
           <div className="price-details">
             <p>$29.99</p>
-            <button>View Details</button>
+            <button  onClick={() => navigate("/Detailpage")}>   View Details </button>
           </div>
         </div>
       </div>

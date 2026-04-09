@@ -25,49 +25,59 @@ const ShopProductGrid = () => {
         </div>
       
         <div className="shopGrid-container">
-    <div className="shopaside">
-        <div className="aside-filter"><h3>Filter</h3></div>
-        <div className="category">
-          <h3>Category</h3>
-          <label htmlFor="Men"><input type="checkbox" /> Men</label>
-          <label htmlFor="Women"><input type="checkbox" /> Women</label>
-          <label htmlFor="Kids"><input type="checkbox" /> Kids</label>
-          <label htmlFor="Accessories"><input type="checkbox" /> Accessories</label>
-        </div>
-        <div className="price-range">
-          <h3>Price Range</h3>
-          <div className="price">
-            <p>$0</p>
-            <p>$300</p>
-          </div></div>
-          <div className="size-div">
-            <h3>Size</h3>
-          <div className="size">
+          <div className="filter-box">
 
-            <p>XS</p>
-            <p>S</p>
-            <p>M</p>
-            <p>L</p>
-            <p>XL</p>
-            <p>XXL</p>
-            </div>
-          </div>
-          <div className="color-op">
-            <h3>Color</h3>
-            <div className="color-circle">
-            <div className="color-green"></div>
-            <div className="color-blue"></div>
-            <div className="color-red"></div>
-            <div className="color-black"></div>
-            <div className="color-beig"></div>
-            <div className="color-black"></div>
-           
-          </div>
-          
-          </div>
-          <div className="aside-btn">
-          <button>Clear All Filters</button></div>
+  <h2 className="title">⚙ Filters</h2>
+
+  <div className="section">
+    <h3>Category</h3>
+    <label><input type="checkbox"/> Men</label>
+    <label><input type="checkbox"/> Women</label>
+    <label><input type="checkbox"/> Kids</label>
+    <label><input type="checkbox"/> Accessories</label>
+  </div>
+
+  <div className="section">
+    <h3>Price Range</h3>
+    <div className="price">
+      <span>$0</span>
+      <span>$300</span>
     </div>
+    <input type="range" min="0" max="300"/>
+  </div>
+
+
+  <div className="section">
+    <h3>Size</h3>
+    <div className="sizes">
+      <button>XS</button>
+      <button>S</button>
+      <button>M</button>
+      <button>L</button>
+      <button>XL</button>
+      <button>XXL</button>
+    </div>
+  </div>
+
+ 
+  <div className="section">
+    <h3>Color</h3>
+    <div className="colors">
+      <span className="c black"></span>
+      <span className="c white"></span>
+      <span className="c gray"></span>
+      <span className="c brown"></span>
+      <span className="c blue"></span>
+      <span className="c red"></span>
+    </div>
+  </div>
+
+  <button className="clear-btn">Clear All Filters</button>
+
+</div>
+
+{/* right side---- */}
+
     <div className="shopright">
        <div className="shop-img-div">
         <div className="shop-image"><img src={leatherjac} alt="" /></div>

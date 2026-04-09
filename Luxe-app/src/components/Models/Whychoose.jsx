@@ -15,7 +15,7 @@ function Whychoose(){
                 <div className="box-svg displayflexcenter"><img src={svg} alt="" /></div>
                 <p className='boldp'>Premium Quality</p>
                 <p className='whyp'>Carefully selected materials and
-exceptional craftsmanship       </p>
+                   exceptional craftsmanship</p>
 
          
         </div>
