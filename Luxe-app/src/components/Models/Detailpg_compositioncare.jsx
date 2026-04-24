@@ -1,8 +1,5 @@
 import React from "react";
-// import "./CompositionCare.css";
-// import { FaTshirt } from "react-icons/fa";
-// import { GiBleedingEye } from "react-icons/gi";
-// import { MdIron } from "react-icons/md";
+  
 
 const CompositionCare = () => {
   return (

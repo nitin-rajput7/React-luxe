@@ -50,7 +50,9 @@ const Reviews = () => {
             <p className="review-text">{item.review}</p>
 
           </div>
-        ))}
+        ))}componentDidCatch(error, info) {
+          
+        }
       </div>
 
     </div>
