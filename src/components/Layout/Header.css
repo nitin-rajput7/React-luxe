@@ -1,0 +1,200 @@
+.site-header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.Navbar {
+  height: 11vh;
+  min-height: 70px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 7vw;
+}
+
+.Navbar .mainlogo a {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: #111111;
+}
+
+.Navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+.Navbar ul a {
+  text-decoration: none;
+  color: #444444;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  transition: color 0.2s ease;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.Navbar ul a:hover,
+.Navbar ul a.active-link {
+  color: #000000;
+  font-weight: 700;
+}
+
+.Navbar ul a.active-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #111;
+}
+
+.Navbar .icons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.Navbar .icon-btn {
+  background: none;
+  border: none;
+  color: #222222;
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform 0.15s ease, color 0.2s ease;
+}
+
+.Navbar .icon-btn:hover {
+  color: #000000;
+  transform: translateY(-1px);
+}
+
+.nav-badge {
+  position: absolute;
+  top: -2px;
+  right: -4px;
+  background-color: #111111;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  min-width: 18px;
+  height: 18px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4px;
+}
+
+.mobile-toggle-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: #111;
+  cursor: pointer;
+  padding: 4px;
+}
+
+/* Expandable search bar */
+.header-search-bar {
+  background-color: #fafafa;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 0.75rem 7vw;
+  animation: slideDown 0.2s ease-out;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.header-search-bar form {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.header-search-bar input {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.header-search-bar button[type="submit"] {
+  background-color: #111;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.25rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.header-search-bar .search-close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  color: #666;
+}
+
+/* Responsive Mobile Navigation */
+@media (max-width: 768px) {
+  .Navbar ul.nav-links {
+    position: fixed;
+    top: 11vh;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    flex-direction: column;
+    padding: 1.5rem 7vw;
+    gap: 1.25rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    display: none;
+  }
+
+  .Navbar ul.nav-links.open {
+    display: flex;
+  }
+
+  .mobile-toggle-btn {
+    display: block;
+  }
+}
+
+/* Desktop Navigation Centering (Matching Figma Design) */
+@media (min-width: 769px) {
+  .Navbar {
+    position: relative;
+  }
+
+  .Navbar ul.nav-links {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

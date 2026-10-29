@@ -1,0 +1,134 @@
+/* ==========================================================================
+   LUXE FOOTER RESPONSIVE STYLES
+   ========================================================================== */
+
+.footer-main {
+  background: #08192d;
+  color: #d1d5db;
+  padding: 4.5rem 7vw 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-container {
+  width: 100%;
+  max-width: 1300px;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+  gap: 40px;
+}
+
+.footer-box h2 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin: 0 0 14px 0;
+}
+
+.footerbox h3,
+.footer-box h3 {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 16px 0;
+  letter-spacing: 0.5px;
+}
+
+.footer-box p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #94a3b8;
+  margin: 0 0 16px 0;
+}
+
+.footerbox ul,
+.footer-box ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+.footerbox ul li,
+.footer-box ul li {
+  color: #94a3b8;
+  transition: color 0.2s ease;
+}
+
+.footerbox ul li:hover,
+.footer-box ul li:hover {
+  color: #ffffff;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 16px;
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+.footer-icons a {
+  color: #94a3b8;
+  transition: color 0.2s, transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-icons a:hover {
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.footer-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #c5a880;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.2s;
+}
+
+.footer-btn:hover {
+  background-color: #b09169;
+}
+
+.footer-bottom {
+  width: 100%;
+  max-width: 1300px;
+  border-top: 1px solid #1e293b;
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+  text-align: center;
+  font-size: 13px;
+  color: #64748b;
+}
+
+/* ================= RESPONSIVE BREAKPOINTS ================= */
+
+@media (max-width: 992px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
+}
+
+@media (max-width: 540px) {
+  .footer-main {
+    padding: 3.5rem 5vw 2rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
