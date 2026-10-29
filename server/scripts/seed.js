@@ -1,6 +1,13 @@
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
+import dns from 'dns';
 import Product from '../models/Product.js';
+
+try {
+  dns.setServers(['8.8.8.8', '8.8.4.4']);
+} catch {
+  // Use default OS DNS
+}
 
 dotenv.config();
 
