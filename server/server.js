@@ -29,6 +29,20 @@ app.use(
 );
 app.use(express.json());
 
+// Root / Welcome Route
+app.get('/', (req, res) => {
+  res.status(200).json({
+    status: 'online',
+    message: 'Welcome to LUXE MERN API Backend!',
+    endpoints: {
+      health: '/api/health',
+      products: '/api/products',
+      orders: '/api/orders',
+      messages: '/api/messages',
+    },
+  });
+});
+
 // API Root / Health Check
 app.get('/api/health', (req, res) => {
   res.status(200).json({
