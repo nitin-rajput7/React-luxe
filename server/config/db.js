@@ -1,7 +1,14 @@
-import mongoose from 'mongoose';
+import dns from 'dns';
+
+// Ensure SRV DNS resolution succeeds across all ISPs and Windows systems
+try {
+  dns.setServers(['8.8.8.8', '8.8.4.4']);
+} catch {
+  // Use default OS DNS if custom server setting fails
+}
 
 // Prevent Mongoose from hanging indefinitely when MongoDB is disconnected
-mongoose.set('bufferTimeoutMS', 3000);
+mongoose.set('bufferTimeoutMS', 5000);
 
 /**
  * Connect to MongoDB Atlas or local MongoDB using Mongoose.
@@ -19,7 +26,8 @@ const connectDB = async () => {
 
   try {
     const conn = await mongoose.connect(uri, {
-      serverSelectionTimeoutMS: 5000,
+      dbName: 'luxe_db',
+      serverSelectionTimeoutMS: 8000,
     });
     console.log(`✅ MongoDB Connected successfully: ${conn.connection.host}`);
     return true;
